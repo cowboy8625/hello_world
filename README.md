@@ -448,3 +448,15 @@ printfn "Hello, World!"
 ```shell
 $ fsi main.fsx
 ```
+
+# Batch
+
+```bat
+echo Hello, World!
+```
+
+**Window**
+
+```shell
+$ ./main.bat
+```
