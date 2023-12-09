@@ -400,3 +400,51 @@ PROCEDURE DIVISION.
 ```shell
 $ cobc -x -free -o hello hello.cob
 ```
+
+# VimScript
+
+```vim
+echo "Hello, World!"
+```
+
+**Linux/Mac/Windows**
+
+```shell
+$ vim main.vim
+```
+
+# Bash
+
+```sh
+echo "Hello, World!"
+```
+
+**Linux/Mac/Windows**
+
+```shell
+$ bash main.sh
+```
+
+# PowerShell
+
+```ps
+Write-Output "Hello, World!"
+```
+
+**Windows**
+
+```shell
+$ pwsh main.ps1
+```
+
+# F#
+
+```fs
+printfn "Hello, World!"
+```
+
+**Linux/Mac/Windows**
+
+```shell
+$ fsi main.fsx
+```
