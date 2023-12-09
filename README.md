@@ -67,7 +67,7 @@ fn main() {
 }
 ```
 
-**Linux/Mac/Windows/Windows**
+**Linux/Mac/Windows**
 
 ```shell
 $ rustc main.rs && ./main
@@ -83,7 +83,7 @@ object HelloWorld {
 }
 ```
 
-**Linux/Mac/Windows/Windows**
+**Linux/Mac/Windows**
 
 ```shell
 $ scala main.scala
@@ -95,7 +95,7 @@ $ scala main.scala
 print("Hello, World!")
 ```
 
-**Linux/Mac/Windows/Windows**
+**Linux/Mac/Windows**
 
 ```shell
 $ switf main.scala
@@ -109,7 +109,7 @@ fun main() {
 }
 ```
 
-**Linux/Mac/Windows/Windows**
+**Linux/Mac/Windows**
 
 ```shell
 $ kotlinc main.kt -include-runtime -d main.jar
@@ -122,7 +122,7 @@ $ kotlin -classpath main.jar MainKt
 main = putStrLn "Hello, World!"
 ```
 
-**Linux/Mac/Windows/Windows**
+**Linux/Mac/Windows**
 
 ```shell
 $ ghc -o Main Main.hs && ./Main
@@ -134,6 +134,12 @@ $ ghc -o Main Main.hs && ./Main
 puts "Hello, World!"
 ```
 
+**Linux/Mac/Windows**
+
+```shell
+$ ruby main.rb
+```
+
 # PHP
 
 ```php
@@ -142,13 +148,26 @@ echo "Hello, World!";
 ?>
 ```
 
+**Linux/Mac/Windows**
+
+```shell
+$ php main.php
+```
+
 # Go
 
 ```go
 package main
+import "fmt"
 func main() {
     fmt.Println("Hello, World!")
 }
+```
+
+**Linux/Mac/Windows/Windows**
+
+```shell
+$ go run main.go
 ```
 
 # C#
@@ -162,10 +181,22 @@ class HelloWorld {
 }
 ```
 
+**Linux/Mac/Windows**
+
+```shell
+$ dotnet run
+```
+
 # Elixir
 
 ```elixir
 IO.puts "Hello, World!"
+```
+
+**Linux/Mac/Windows**
+
+```shell
+$ elixir main.exs
 ```
 
 # Objective-C
@@ -180,11 +211,23 @@ int main(int argc, const char * argv[]) {
 }
 ```
 
+**Linux/Mac/Windows**
+
+```shell
+$ clang -framework Foundation -o myProgram main.m
+```
+
 # Ocaml
 
 ```ocaml
 let () =
     Printf.printf "Hello, World!\n"
+```
+
+**Linux/Mac/Windows**
+
+```shell
+$ ocaml main.ml
 ```
 
 # Lua
@@ -193,10 +236,22 @@ let () =
 print("Hello, World!")
 ```
 
+**Linux/Mac/Windows**
+
+```shell
+$ lua main.lua
+```
+
 # Odin
 
 ```odin
 print("Hello, World!")
+```
+
+**Linux/Mac/Windows**
+
+```shell
+$ odin main.odin
 ```
 
 # Nim
@@ -205,12 +260,24 @@ print("Hello, World!")
 echo "Hello, World!"
 ```
 
+**Linux/Mac/Windows**
+
+```shell
+$ nim c main.nim
+```
+
 # Dart
 
 ```dart
 void main() {
     print("Hello, World!");
 }
+```
+
+**Linux/Mac/Windows**
+
+```shell
+$ dart main.dart
 ```
 
 # Zig
@@ -222,7 +289,13 @@ pub fn main() void {
 }
 ```
 
-# Assembly
+**Linux/Mac/Windows**
+
+```shell
+$ zig run main.zig
+```
+
+# x86_64 Assembly
 
 ```asm
 section .text
@@ -241,10 +314,24 @@ msg: db "Hello, World!", 10
 msg_len: equ $-msg
 ```
 
+**Linux**
+
+```shell
+$ nasm -f elf64 -o main.o main.asm
+$ ld -o main main.o
+$ ./main
+```
+
 # JavaScript
 
 ```js
 console.log("Hello, World!");
+```
+
+**Linux/Mac/Windows**
+
+```shell
+$ node main.js
 ```
 
 # TypeScript
@@ -253,10 +340,23 @@ console.log("Hello, World!");
 console.log("Hello, World!");
 ```
 
+**Linux/Mac/Windows**
+
+```shell
+$ tsc main.ts
+$ node main.js
+```
+
 # CoffeeScript
 
 ```coffee
 puts "Hello, World!"
+```
+
+**Linux/Mac/Windows**
+
+```shell
+$ coffee main.coffee
 ```
 
 # Clojure
@@ -265,8 +365,38 @@ puts "Hello, World!"
 (println "Hello, World!")
 ```
 
+**Linux/Mac/Windows**
+
+```shell
+$ clojure main.clj
+```
+
 # Common Lisp
 
 ```lisp
-(println "Hello, World!")
+(format t "Hello, World!~%")
+```
+
+**Linux/Mac/Windows**
+
+```shell
+$ sbcl --script main.lisp
+```
+
+# Cobol
+
+```cobol
+IDENTIFICATION DIVISION.
+PROGRAM-ID. HelloWorld.
+
+PROCEDURE DIVISION.
+    DISPLAY 'Hello, World!'.
+    STOP RUN.
+
+```
+
+**Linux/Mac/Windows**
+
+```shell
+$ cobc -x -free -o hello hello.cob
 ```
