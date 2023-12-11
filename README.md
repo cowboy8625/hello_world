@@ -460,3 +460,15 @@ echo Hello, World!
 ```shell
 $ ./main.bat
 ```
+
+# R
+
+```r
+print("Hello, World!")
+```
+
+**Linux/Mac/Windows**
+
+```shell
+$ Rscript main.r
+```
