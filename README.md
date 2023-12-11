@@ -472,3 +472,19 @@ print("Hello, World!")
 ```shell
 $ Rscript main.r
 ```
+
+# Haxe
+
+```haxe
+class Main {
+    static public function main():Void {
+        trace("Hello World");
+    }
+}
+```
+
+**Linux/Mac/Windows**
+
+```shell
+$ haxe --main Main --interp
+```
