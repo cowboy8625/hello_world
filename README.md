@@ -488,3 +488,15 @@ class Main {
 ```shell
 $ haxe --main Main --interp
 ```
+
+# Forth
+
+```forth
+." Hello, World!" CR
+```
+
+**Linux/Mac/Windows**
+
+```shell
+$ gforth main.fs -e byte
+```
