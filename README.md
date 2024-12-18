@@ -500,3 +500,17 @@ $ haxe --main Main --interp
 ```shell
 $ gforth main.fs -e byte
 ```
+
+# Fortran
+
+```fortran
+program hello
+    print *, "Hello, World!"
+end program hello
+```
+
+**Linux/Mac/Windows**
+```shell
+$ gfortran main.f90
+$ ./a.out
+```
